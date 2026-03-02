@@ -1,20 +1,14 @@
-// Add all scripts to the JS folder
-
-var map =  L.map('map').setView([15, -15], 2
-); 
+var map = L.map('map').setView([15, -15], 2);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
-console.log("Map1 initialized");
 
-// Function to scale circle radius by magnitude
+console.log("Map initialized");
+
 function getRadius(mag) {
-  // Linear scaling with multiplier
-  return (mag - 7.5) * 10; // subtract baseline 7.5 to exaggerate differences
-  // Example: mag 8 → (8-7.5)*10 = 5
-  //          mag 9 → (9-7.5)*10 = 15
+  return Math.max((mag - 7.5) * 10, 2); // minimum radius 2
 }
 
 fetch("data/eqpacific1.geojson")

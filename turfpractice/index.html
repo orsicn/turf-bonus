@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-          <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width">
-                <title>Earthquake</title>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Earthquake</title>
 
-        <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="css/style.css"/>
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
 
-        <link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
+    <!--[if IE<9]>
+        <link rel="stylesheet" href="css/style.ie.css">
+    <![endif]-->
+</head>
 
-        <!--[if IE<9]>
-            <link rel="stylesheet" href="css/style.ie.css">
-        <![endif]-->
+<body>
+    <h1>Earthquakes</h1>
+    <div id="map"></div>
 
-         <!--you can also place internal styles here;
-             place these within <style> tags-->
-        
-    </head>
-
-    <body>
-        <h1>Earthquakes</h1>
-
-        <div id="map"></div> 
-        <!--<div id="vorP"></div>
-
-        <put your initial page content here-->
-
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
-
-        <!--put your external script links here-->
-
-        <script src="lib/leaflet/leaflet.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/@turf/turf/turf.min.js"></script>
-
-        <script src="/js/main.js"></script>
-
-        <!--<script type="text/javascript" src="https://unpkg.com/@turf/turf"></script>
-
-
-        <script src="js/main.js"></script>
-         
-    </body>
+    <!-- External Scripts -->
+    <script src="lib/leaflet/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf/turf.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
