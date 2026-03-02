@@ -6,7 +6,9 @@
             <title></title>
 
         <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css"/>
+
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
@@ -17,6 +19,9 @@
     </head>
 
     <body>
+
+        <div id="map"></div> 
+
         <!--put your initial page content here-->
 
         <!--you can also use this space for internal scripts;
@@ -24,5 +29,10 @@
 
         <!--put your external script links here-->
         <script type="text/javascript" src="https://unpkg.com/@turf/turf"></script>
+
+         <script src="lib/leaflet/leaflet.js"></script>
+
+         <script src="js/main.js"></script>
+         
     </body>
 </html>
