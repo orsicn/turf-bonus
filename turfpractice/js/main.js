@@ -17,7 +17,7 @@ function getRadius(mag) {
   //          mag 9 → (9-7.5)*10 = 15
 }
 
-fetch("data/eqpacific.geojson")
+fetch("data/eqpacific1.geojson")
   .then(response => response.json())
   .then(data => {
     L.geoJSON(data, {
